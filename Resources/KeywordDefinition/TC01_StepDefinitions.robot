@@ -98,7 +98,7 @@ Navigate to the checkout page from cart page
     ${formTitle}    Get Text         ${Checkoutpage.your_information_title}
     Should Be Equal As Strings       ${formTitle}        Your information        Form title should have been Your Information but it is ${formTitle}
 
-Generate Random Data Generate Random Data for billing form with invalid post code
+Generate Random Data for billing form with invalid post code
     ${name}                 Generate Random String    10     [LETTERS]
     ${lastName}             Generate Random String    10     [LETTERS]
     ${invalidPostalCode}    Generate Random String    5      [NUMBERS][LETTERS]
