@@ -1,0 +1,41 @@
+PostiHomePage:
+        accept_cookies:  xpath=//*[@id="onetrust-accept-btn-handler"]
+        all_stamps_button:  xpath=//*[@id="send-letters-and-postcards-with-stamps"]/div[2]/div/div/a
+
+StampsShoppingPage:
+        products_section_title: xpath=//*[@id="__next"]/div[2]/section[1]/div/div/div[2]/div[1]
+        first_stamp_price_on_page: xpath=//*[@data-testid="products-list"]/li[1]/div/div[2]/div
+        first_stamp_name_on_page: xpath=//*[@data-testid="products-list"]/li[1]/div/div/div[2]/div
+        first_stamp_add_to_cart_button: xpath=//*[@data-testid="products-list"]/li[1]/div/div[3]/div/button
+        second_stamp_price_on_page: xpath=//*[@data-testid="products-list"]/li[2]/div/div[2]/div
+        second_stamp_name_on_page: xpath=//*[@data-testid="products-list"]/li[2]/div/div/div[2]/div
+        second_stamp_add_to_cart_button: xpath=//*[@data-testid="products-list"]/li[2]/div/div[3]/div/button
+        add_To_Cart_Success_Notification: xpath=//*[@data-testid="notification"]
+        notification_close_icon: xpath=//*[@data-testid="notification"]/div/button
+        cart_button: xpath=//a[@data-testid="cart-button"]
+
+CartPage:
+        cart_page_title: xpath=//*[@id="cart-page-title"]
+        product_names: xpath=//*[@id="cart-item-name"]
+        cart_total_loader: xpath=//*[@class="CartTotals__LoaderContainer-sc-4buoch-7 hakYKC"]
+        sub_total_price: xpath=//*[@id="cart-totals-subtotal-value"]
+        delivery_fee: xpath=//*[@id="cart-totals-shipping-value"]
+        total_price: xpath=//*[@id="cart-totals-total-value"]
+        stamps_button_header: xpath=//ul[@class="sc-hc1f10-11 sc-hc1f10-13 lianmh fjamPI"]/li[1]/a
+        checkout_button: xpath=//*[@id="cart-totals-cta"]
+
+CheckoutPage:
+        your_information_title: xpath=//*[@class="Checkout__Item-sc-15q941x-5 jgUhLg"]/div
+        billing_form_first_name: xpath=//*[@id="billing-firstname-field"]
+        billing_form_last_name: xpath=//*[@id="billing-lastname-field"]
+        billing_form_street_address_box: xpath=//*[@id="billing-domestic"]/div/div
+        billing_form_street_address: xpath=//*[@id="billing"]
+        billing_form_additional_address: xpath=//*[@id="billing-street-field-1"]
+        billing_form_postal_code: xpath=//*[@id="billing-postcode-field"]
+        billing_form_city: xpath=//*[@id="billing-city-field"]
+        billing_form_telephone: xpath=//*[@id="billing-telephone-field"]
+        billing_form_email: xpath=//*[@id="billing-email-field"]
+        save_and_continue_button: xpath=//*[@id="checkoutNexBtn"]
+        postal_code_warning_message: xpath=//*[@class="PostcodeField__PostcodeMessageWrapper-sc-rt55vm-0 cWAqIh"]
+        billing_form_summary_after_save: xpath=//*[@class="BillingSummary__Container-sc-199lwhs-0 SmMGQ"]
+
