@@ -64,7 +64,7 @@ Navigate to the cart page and check the products added to the cart
     
 Check the subtotal, delivery fee and total prices calculated correctly
     [Arguments]    @{productPrices}
-    Wait Until Element Is Not Visible    //*[@class="CartTotals__LoaderContainer-sc-4buoch-7 hakYKC"]
+    Wait Until Element Is Not Visible    ${CartPage.price_section_load_spinner}
     ${subTotalPrice}    Get The Sum Of Numbers    ${productPrices}
     ${subTotalPriceOnPageAsText}    Get Text      ${CartPage.sub_total_price}  
     ${subTotalOnPage}    Convert String To Decimal        ${subTotalPriceOnPageAsText}

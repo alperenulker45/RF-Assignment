@@ -21,6 +21,7 @@ CartPage:
         sub_total_price: xpath=//*[@id="cart-totals-subtotal-value"]
         delivery_fee: xpath=//*[@id="cart-totals-shipping-value"]
         total_price: xpath=//*[@id="cart-totals-total-value"]
+        price_section_load_spinner: xpath=//*[@class="CartTotals__LoaderContainer-sc-4buoch-7 hakYKC"]
         stamps_button_header: xpath=//ul[@class="sc-hc1f10-11 sc-hc1f10-13 lianmh fjamPI"]/li[1]/a
         checkout_button: xpath=//*[@id="cart-totals-cta"]
 
