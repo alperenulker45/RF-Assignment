@@ -3,13 +3,13 @@ PostiHomePage:
         all_stamps_button:  xpath=//*[@id="send-letters-and-postcards-with-stamps"]/div[2]/div/div/a
 
 StampsShoppingPage:
-        products_section_title: xpath=//*[@id="__next"]/div[2]/section[1]/div/div/div[2]/div[1]
+        products_section_title: xpath=//*[@class="Grid__Cell-sc-1h2zjt7-1 gxHkCe"]/div[1]
         first_stamp_price_on_page: xpath=//*[@data-testid="products-list"]/li[1]/div/div[2]/div
         first_stamp_name_on_page: xpath=//*[@data-testid="products-list"]/li[1]/div/div/div[2]/div
-        first_stamp_add_to_cart_button: xpath=//*[@data-testid="products-list"]/li[1]/div/div[3]/div/button
+        first_stamp_add_to_cart_button: xpath=//*[@data-testid="add-0114874-10-to-cart-button"]
         second_stamp_price_on_page: xpath=//*[@data-testid="products-list"]/li[2]/div/div[2]/div
         second_stamp_name_on_page: xpath=//*[@data-testid="products-list"]/li[2]/div/div/div[2]/div
-        second_stamp_add_to_cart_button: xpath=//*[@data-testid="products-list"]/li[2]/div/div[3]/div/button
+        second_stamp_add_to_cart_button: xpath=//*[@data-testid="add-0114875-10-to-cart-button"]                    
         add_To_Cart_Success_Notification: xpath=//*[@data-testid="notification"]
         notification_close_icon: xpath=//*[@data-testid="notification"]/div/button
         cart_button: xpath=//a[@data-testid="cart-button"]
