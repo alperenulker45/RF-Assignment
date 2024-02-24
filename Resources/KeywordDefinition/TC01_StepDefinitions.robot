@@ -102,10 +102,11 @@ Generate Random Data for billing form with invalid post code
     ${name}                 Generate Random String    10     [LETTERS]
     ${lastName}             Generate Random String    10     [LETTERS]
     ${invalidPostalCode}    Generate Random String    5      [NUMBERS][LETTERS]
+    ${invalidPostalCode2}   Generate Random String    6      [NUMBERS] 
     ${telephone}            Generate Random String    8      [NUMBERS]
     ${mail}                 Generate Random String    5      [LETTERS]
     ${mailFormat}           Set Variable         ${mail}@mail.com
-    RETURN     ${name}      ${lastName}        ${invalidPostalCode}          ${telephone}          ${mailFormat}
+    RETURN     ${name}      ${lastName}        ${invalidPostalCode}     ${invalidPostalCode2}          ${telephone}          ${mailFormat}
 
 Fill the billing form with invalid post code
     [Arguments]    ${name}    ${surname}    ${postCode}    ${telephone}    ${mail}
