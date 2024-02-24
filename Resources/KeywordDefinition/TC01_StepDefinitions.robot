@@ -31,7 +31,7 @@ Get the name and price of first stamp and add to the cart
     Click Application Element            ${StampsShoppingPage.first_stamp_add_to_cart_button}
     RETURN      ${stampName}       ${stampPrice}
     
-Check The Add To Cart Notification Popup Displayed Correctly
+Check the add to cart notification popup displayed correctly
     [Arguments]    ${stampName}
     wait until element is visible        ${StampsShoppingPage.add_To_Cart_Success_Notification}
     ${notificationText}        Get Text    ${StampsShoppingPage.add_To_Cart_Success_Notification}
@@ -77,9 +77,9 @@ Check the subtotal, delivery fee and total prices calculated correctly
     ${totalPrice}    Get The Sum Of Numbers        ${totalPriceAsList}
     ${totalPriceOnPageAsText}    Get Text    ${CartPage.total_price}
     ${totalPriceOnPage}    Convert String To Decimal        ${totalPriceOnPageAsText}
-    Should Be Equal As Numbers      ${totalPrice}           ${totalPriceOnPage}
+    Should Be Equal As Numbers      ${totalPrice}           ${totalPriceOnPage}     Total price should have been ${totalPrice} but it is ${totalPriceOnPage}
 
-Navigate to All Stamps Shopping Page From Cart Page
+Navigate to all stamps shopping page from cart page
     Click application element     ${CartPage.stamps_button_header}
     Wait Until Element Is Visible    ${StampsShoppingPage.products_section_title}         30        Stamps shopping page has not been loaded in 30 seconds
     ${subTitle}    Get Text          ${StampsShoppingPage.products_section_title}
@@ -98,7 +98,7 @@ Navigate to the checkout page from cart page
     ${formTitle}    Get Text         ${Checkoutpage.your_information_title}
     Should Be Equal As Strings       ${formTitle}        Your information        Form title should have been Your Information but it is ${formTitle}
 
-Generate Random Data for billing form with invalid post code
+Generate random data for billing form with invalid post code
     ${name}                 Generate Random String    10     [LETTERS]
     ${lastName}             Generate Random String    10     [LETTERS]
     ${invalidPostalCode}    Generate Random String    5      [NUMBERS][LETTERS]
